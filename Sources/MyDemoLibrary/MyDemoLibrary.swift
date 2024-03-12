@@ -13,7 +13,6 @@ public class JSONParser {
 public class MakeRoundedCorder: UIView{
     override public init(frame: CGRect) {
         super.init(frame: frame)
-        self.roundedCorner()
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -21,14 +20,9 @@ public class MakeRoundedCorder: UIView{
     }
     
     public override func layoutSubviews() {
-            super.layoutSubviews()
-            layer.cornerRadius = 10 // Adjust corner radius as needed
-            layer.masksToBounds = true
-        }
-    
-    func roundedCorner(){
-        self.layer.cornerRadius = 10
-        self.layer.backgroundColor = UIColor.green.cgColor
-        self.layer.masksToBounds = true
+        super.layoutSubviews()
+        layer.cornerRadius = 10 // Adjust corner radius as needed
+        layer.backgroundColor = UIColor.green.cgColor
+        layer.masksToBounds = true
     }
 }
