@@ -11,12 +11,12 @@ public class JSONParser {
 }
 
 public class MakeRoundedCorder: UIView{
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         self.roundedCorner()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
        super.init(coder: aDecoder)
     }
     
