@@ -46,7 +46,7 @@ public class MakeRoundedCorderTestingPublic: UIView{
 
 
 open class MakeRoundedCorderTestingOpen: UIView{
-    override public init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
@@ -54,7 +54,7 @@ open class MakeRoundedCorderTestingOpen: UIView{
        super.init(coder: aDecoder)
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = 30 // Adjust corner radius as needed
         layer.backgroundColor = UIColor.systemPink.cgColor
