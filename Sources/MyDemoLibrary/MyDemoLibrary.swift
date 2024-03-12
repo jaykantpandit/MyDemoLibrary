@@ -21,7 +21,7 @@ public class MakeRoundedCorder: UIView{
     
     public override func layoutSubviews() {
         super.layoutSubviews()
-        layer.cornerRadius = 10 // Adjust corner radius as needed
+        layer.cornerRadius = 30 // Adjust corner radius as needed
         layer.backgroundColor = UIColor.green.cgColor
         layer.masksToBounds = true
     }
