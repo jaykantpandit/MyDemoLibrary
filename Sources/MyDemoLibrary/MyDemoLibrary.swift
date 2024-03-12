@@ -20,6 +20,12 @@ public class MakeRoundedCorder: UIView{
        super.init(coder: aDecoder)
     }
     
+    public override func layoutSubviews() {
+            super.layoutSubviews()
+            layer.cornerRadius = 10 // Adjust corner radius as needed
+            layer.masksToBounds = true
+        }
+    
     func roundedCorner(){
         self.layer.cornerRadius = 10
         self.layer.backgroundColor = UIColor.green.cgColor
