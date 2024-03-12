@@ -26,3 +26,38 @@ public class MakeRoundedCorder: UIView{
         layer.masksToBounds = true
     }
 }
+
+public class MakeRoundedCorderTestingPublic: UIView{
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+       super.init(coder: aDecoder)
+    }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        layer.cornerRadius = 30 // Adjust corner radius as needed
+        layer.backgroundColor = UIColor.blue.cgColor
+        layer.masksToBounds = true
+    }
+}
+
+
+open class MakeRoundedCorderTestingOpen: UIView{
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+       super.init(coder: aDecoder)
+    }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        layer.cornerRadius = 30 // Adjust corner radius as needed
+        layer.backgroundColor = UIColor.systemPink.cgColor
+        layer.masksToBounds = true
+    }
+}
